@@ -9,9 +9,21 @@ public class BeanConfig {
 	@Bean
 	public Beer getBeer(){
 		Beer beer = new Beer();
-		beer.setName("Chimay Grande Réserve");
-		beer.setBrewery("Bières de Chimay Belgian");
+		beer.setName("Chimay Grande Rï¿½serve");
+		beer.setBrewery("Biï¿½res de Chimay Belgian");
 		beer.setType("Strong Dark Ale");
 		return beer;
 	}
+
+	@Bean(name = "Nuka")
+    public Brewery getNukaBruwery() {
+	    Brewery brewery = new NukaBeerBrewery();
+	    return brewery;
+    }
+
+    @Bean(name = "Cara")
+    public Brewery getCaraPisseBrewry() {
+	    Brewery brewery = new CaraPisseBrewery();
+	    return brewery;
+    }
 }
