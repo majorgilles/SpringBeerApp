@@ -1,3 +1,7 @@
+#idea
+.idea/
+*.iml
+
 .metadata
 .settings/
 .loadpath
